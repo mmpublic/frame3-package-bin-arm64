@@ -23,11 +23,7 @@ if [ "$IS_CRATE_TAG"x == "y"x ]; then
   echo $NEW_TAG > $PWD/version
   git add $PWD/version
   git commit -a -n -m"NEW TAG:$NEW_TAG"
-  echo "input tag info (ctrl+D exit):"
-  read -d `echo -e "\004"` -p "input tag info:`echo $'\n\r'`" TAG_MSG </dev/tty
-  echo
-  echo "-- ADD TAG"
-  git tag $NEW_TAG -m "$TAG_MSG"
+  git tag -a $NEW_TAG 
   echo "-- PUSH TAG"
   git push --tags --no-verify
   # git tag -a 
