@@ -1,5 +1,5 @@
-# frame3-package-system
-系统包
+# frame3-package-bin
+系统可执行程序升级包
 
 ## 版本说明:
-node arm64 - v8.9.0
+mmod arm64 - v8.9.0
